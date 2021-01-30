@@ -2,7 +2,7 @@
 ---
 
 Design Document  
-Austin Walder
+Austin Walder  
 Tianzuo Huang
 
 ## Introduction 
