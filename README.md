@@ -28,6 +28,8 @@ Also you can keep a log of which breweries you have visited so you can tell othe
 ## Functional Requirements
 ### 1. As a
 #### Example 1
-** Given **:
-** When **:
-** Then **:
+** Given **
+
+** When **
+
+** Then **
