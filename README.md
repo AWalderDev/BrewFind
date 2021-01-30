@@ -47,6 +47,7 @@ Common names are stated in English.
 1.1  
 
 **Given** Breweries location search data is available  
+**Given** User location data is available 
 
 **When**  I search for “Breweries”  
 
@@ -60,6 +61,7 @@ Cideries: Any cideries with the name "breweries" and nearby my location
 
 1.2  
 **Given** Breweries location search data is available
+**Given** User location data is available 
 
 **When** I search for “huahhudnwjnajkb:qwe”  
 
