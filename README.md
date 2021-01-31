@@ -155,9 +155,9 @@ Breweries/Cideries/Bottleshops are distiguishable from each other.
 **Given** Breweries location search data is available  
 **Given** User local/cloud database connection is available
 
-**When**  I navigate to the search tab, search for breweries with a set of parameters, select a brewery, and press the "I've been here" button  
+**When**  I navigate to the search tab, search for breweries in cincinnati, then select "Streetside Brewing" and press the "I've been here" button  
 
-**Then** when I navigate to the "Breweries You've Visited" page, the selected brewery will be listed
+**Then** when I navigate to the "Breweries You've Visited" page, "Streetside Brewing" will be listed
 
 
 
