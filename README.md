@@ -48,9 +48,9 @@ Cideries/Breweries/Bottleshops are distiguishable from each other.
 **Given** Breweries location search data is available  
 **Given** User location data is available 
 
-**When**  View the "Around You" tab
+**When**  I open the app
 
-**Then** I should see a list of breweries/cideries/bottleshops sorted by distance from my location in ascending order. 
+**Then** I should see a searchable/sortable list of breweries/cideries/bottleshops sorted by distance from my location in ascending order. 
 
 ### Requirement 101: Search for breweries in a specific region
 
@@ -72,7 +72,7 @@ Breweries/Cideries/Bottleshops are distiguishable from each other.
 **Given** Breweries location search data is available  
 **Given** User location data is available 
 
-**When**  Change search type to city and search for "Cincinnati"  
+**When**  I change search type to city and search for "Cincinnati"  
 
 **Then** I should receive see a list of breweries in Cincinnati sorted by name ascending.
 
@@ -155,7 +155,7 @@ Breweries/Cideries/Bottleshops are distiguishable from each other.
 **Given** Breweries location search data is available  
 **Given** User local/cloud database connection is available
 
-**When**  I navigate to the search tab, search for breweries in cincinnati, then select "Streetside Brewing" and press the "I've been here" button  
+**When**  I navigate to the main screen, search for breweries in cincinnati, then select "Streetside Brewing" and press the "I've been here" button  
 
 **Then** when I navigate to the "Breweries You've Visited" page, "Streetside Brewing" will be listed
 
