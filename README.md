@@ -159,7 +159,24 @@ Breweries/Cideries/Bottleshops are distiguishable from each other.
 
 **Then** when I navigate to the "Breweries You've Visited" page, "Streetside Brewing" will be listed
 
+## Class Diagram
 
+
+
+### Class Diagram Description
+
+
+**MainActivity:**  The first screen the user sees.  This will have a list of breweries sorted by distance from user.  
+
+**VisitedListActivity:**  A screen that shows a list of breweries the user has visited.  
+
+**RetrofitInstance:** Boostrap class required for Retrofit.  
+
+**Brewery:** Noun class that represents a brewery.    
+
+**IBreweryDAO:** Interface for Retrofit to find and parse Brewery JSON.  
+
+**VisitedListDAO:** Interface for firebase to store and read visited brewery data.  
 
 
 
