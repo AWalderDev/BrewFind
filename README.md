@@ -161,7 +161,7 @@ Breweries/Cideries/Bottleshops are distiguishable from each other.
 
 ## Class Diagram
 
-
+![BrewFindUML (2)](https://user-images.githubusercontent.com/46360340/106378338-dfac5700-6371-11eb-8291-6568c0846e23.png)
 
 ### Class Diagram Description
 
