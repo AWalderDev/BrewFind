@@ -31,17 +31,16 @@ Also you can keep a log of which breweries you have visited so you can tell othe
 
 #### Scenario
 
-As a user interested in drinking, I want to be able to search breweries around me base on my location. 
+As a user interested in drinking, I want to be able to see breweries around me based on my location. 
 
 #### Dependencies
 
-Breweries location search data are available and accessible.  
+Breweries location search data are available and accessible.
+The device has GPS capabilities, and the user has granted location access.
 
 #### Assumptions
 
-Scientific names are stated in Latin.  
-
-Common names are stated in English.  
+Cideries/Breweries/Bottleshops are distiguishable from each other.
 
 #### Examples
 1.1  
@@ -49,22 +48,94 @@ Common names are stated in English.
 **Given** Breweries location search data is available  
 **Given** User location data is available 
 
-**When**  I search for “Breweries”  
+**When**  View the "Around You" tab
 
-**Then** I should receive at least one result with these attributes:  
+**Then** I should see a list of breweries/cideries/bottleshops sorted by distance from my location in ascending order. 
 
-Breweries: Any breweriese nearby my location  
+### Requirement 101: Search for breweries in a specific city
 
-Bottleshops: Any bottleshops with the name "breweries" and nearby my location 
+#### Scenario
 
-Cideries: Any cideries with the name "breweries" and nearby my location  
+As a user interested in planning brewery visits in another city, I want to be able to search for breweries by region.
 
-1.2  
+#### Dependencies
+
+Breweries location search data are available and accessible.
+
+#### Assumptions
+
+Breweries/Cideries/Bottleshops are distiguishable from each other.
+
+#### Examples
+1.1  
+
 **Given** Breweries location search data is available  
 **Given** User location data is available 
 
-**When** I search for “huahhudnwjnajkb:qwe”  
+**When**  Change search type to city and search for "Cincinnati"  
+
+**Then** I should receive see a list of breweries in Cincinnati sorted by name ascending.
+
+1.2
+
+**Given** Breweries location search data is available  
+**Given** User location data is available 
+
+**When**  Change search type to state and search for "California"  
+
+**Then** I should receive see a list of breweries in California sorted by name ascending.
+
+1.3  
+**Given** Breweries location search data is available  
+**Given** User location data is available 
+
+**When** I change the search type to city or state and search for “huahhudnwjnajkb:qwe”  
 
 **Then** I should receive zero results (an empty list)
+
+
+### Requirement 102: Sort Breweries Around Me by Size
+
+#### Scenario
+
+As a user interested in visiting small local brewers in my area I want to sort breweries around me by size.
+
+#### Dependencies
+
+Breweries location search data are available and accessible.
+
+#### Assumptions
+
+Breweries/Cideries/Bottleshops are distiguishable from each other.
+
+#### Examples
+1.1  
+
+**Given** Breweries location search data is available  
+**Given** User location data is available 
+
+**When**  I navigate to the search tab, select search by city, type "Cincinnati" in the search bar, and select "Size" in the sort tab  
+
+**Then** I should receive see a list of breweries in Cincinnati sorted by size.
+
+1.2
+
+**Given** Breweries location search data is available  
+**Given** User location data is available 
+
+**When**  I navigate to the search tab, select search by state, type "Ohio" in the search bar, and select "Size" in the sort tab  
+
+**Then** I should receive see a list of breweries in Ohio sorted by size.
+
+1.3  
+**Given** Breweries location search data is available  
+**Given** User location data is available 
+
+**When** I change the search type to city or state and search for “huahhudnwjnajkb:qwe” and sort by size  
+
+**Then** I should receive zero results (an empty list)
+
+
+
 
 
