@@ -52,11 +52,11 @@ Cideries/Breweries/Bottleshops are distiguishable from each other.
 
 **Then** I should see a list of breweries/cideries/bottleshops sorted by distance from my location in ascending order. 
 
-### Requirement 101: Search for breweries in a specific city
+### Requirement 101: Search for breweries in a specific region
 
 #### Scenario
 
-As a user interested in planning brewery visits in another city, I want to be able to search for breweries by region.
+As a user interested in planning brewery visits in another area, I want to be able to search for breweries by region.
 
 #### Dependencies
 
@@ -94,7 +94,7 @@ Breweries/Cideries/Bottleshops are distiguishable from each other.
 **Then** I should receive zero results (an empty list)
 
 
-### Requirement 102: Sort Breweries Around Me by Size
+### Requirement 102: Search For and Sort Breweries by Size
 
 #### Scenario
 
