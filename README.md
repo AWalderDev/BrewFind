@@ -166,7 +166,7 @@ Breweries/Cideries/Bottleshops are distiguishable from each other.
 ### Class Diagram Description
 
 
-**MainActivity:**  The first screen the user sees.  This will have a list of breweries sorted by distance from user.  
+**MainActivity:**  The first screen the user sees.  This will have a list of breweries sorted by distance from user. The list is sortable and searchable by size, region, name.
 
 **VisitedListActivity:**  A screen that shows a list of breweries the user has visited.  
 
