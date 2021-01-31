@@ -135,6 +135,33 @@ Breweries/Cideries/Bottleshops are distiguishable from each other.
 
 **Then** I should receive zero results (an empty list)
 
+### Requirement 103: Add Brewery to Log to Keep Track of Breweries Visited
+
+#### Scenario
+
+As a user interested in keeping track of breweries I have visited I want to be able to add breweries to a list of my visited breweries
+
+#### Dependencies
+
+Local or Cloud based data storage is available and accesible.
+
+#### Assumptions
+
+Breweries/Cideries/Bottleshops are distiguishable from each other.
+
+#### Examples
+1.1  
+
+**Given** Breweries location search data is available  
+**Given** User local/cloud database connection is available
+
+**When**  I navigate to the search tab, search for breweries with a set of parameters, select a brewery, and press the "I've been here" button  
+
+**Then** when I navigate to the "Breweries You've Visited" page, the selected brewery will be listed
+
+
+
+
 
 
 
