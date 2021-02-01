@@ -182,8 +182,11 @@ Breweries/Cideries/Bottleshops are distiguishable from each other.
 ## Scrum Roles
 
 -Product Owner/Scrum Master/DevOps: Austin Walder
+
 -UI Specialist: Daniel Cullen
+
 -Integration Specialist: Tianzuo Huang
+
 
 ## Group Meeting Time
 
