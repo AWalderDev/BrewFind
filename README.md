@@ -4,6 +4,7 @@
 Design Document  
 Austin Walder  
 Tianzuo Huang
+
 Daniel Cullen
 
 ## Introduction 
