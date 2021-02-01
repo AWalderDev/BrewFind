@@ -4,6 +4,7 @@
 Design Document  
 Austin Walder  
 Tianzuo Huang
+Daniel Cullen
 
 ## Introduction 
 Have you ever been to a new city or region and thought, "Where can I get a drink around here?" With BrewFind you can:
@@ -178,8 +179,15 @@ Breweries/Cideries/Bottleshops are distiguishable from each other.
 
 **VisitedListDAO:** Interface for firebase to store and read visited brewery data.  
 
+## Scrum Roles
 
+-Product Owner/Scrum Master/DevOps: Austin Walder
+-UI Specialist: Daniel Cullen
+-Integration Specialist: Tianzuo Huang
 
+## Group Meeting Time
+
+-Sunday 7pm on Discord
 
 
 
