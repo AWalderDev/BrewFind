@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BrewFind</string>
+    <string name="brewName">Brew Name</string>
+    <string name="street">Street</string>
+    <string name="city">City</string>
+    <string name="searchPage">Search Page</string>
+    <string name="menuPage">Menu Page</string>
+    <string name="managePage">Manage Page</string>
 </resources>
