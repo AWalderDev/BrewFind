@@ -16,4 +16,8 @@ class MainViewModel : ViewModel() {
     fun fetchBreweries() {
         breweries = breweryService.fetchBreweries()
     }
+
+    fun fetchBreweriesByName(breweryName: String){
+        breweries = breweryService.fetchBreweriesByName(breweryName)
+    }
 }

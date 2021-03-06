@@ -3,7 +3,6 @@ package com.brewfind
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.brewfind.ui.main.MainViewModel
 import org.junit.Test
-
 import org.junit.Assert.*
 import org.junit.Rule
 import org.junit.rules.TestRule
@@ -37,7 +36,7 @@ class BreweryDataUnitTest {
     }
 
     private fun whenSearchForStreetside() {
-        mvm.fetchBreweries("Streetside")
+        mvm.fetchBreweriesByName("Streetside")
     }
 
     private fun thenResultContainsStreetside() {
@@ -62,7 +61,7 @@ class BreweryDataUnitTest {
     }
 
     private fun whenISearchForGarbage() {
-        mvm.fetchBreweries("huahhudnwjnajkbqwe")
+        mvm.fetchBreweriesByName("huahhudnwjnajkbqwe")
     }
 
     private fun thenIGetZeroResults() {
