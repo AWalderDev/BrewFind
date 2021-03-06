@@ -37,7 +37,7 @@ class BreweryDataUnitTest {
     }
 
     private fun whenSearchForStreetside() {
-        mvm.fetchBreweries("Streetside")
+        mvm.fetchBreweriesByArea("Streetside")
     }
 
     private fun thenResultContainsStreetside() {
