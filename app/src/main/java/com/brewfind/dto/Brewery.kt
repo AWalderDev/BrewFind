@@ -1,7 +1,9 @@
 package com.brewfind.dto
 
-data class Brewery(var name: String) {
+import com.google.gson.annotations.SerializedName
+
+data class Brewery(@SerializedName("Name") var name: String, @SerializedName("brewery_type") var size: String, @SerializedName("street") var street: String) {
     override fun toString(): String {
-        return "$name"
+        return "$name $size $street"
     }
 }
