@@ -1,7 +1,7 @@
 package com.brewfind.dto
 
-data class Brewery(var name: String, var size: String, var street: String, var city: String, var state: String, var zipCode: String) {
+data class Brewery(var name: String) {
     override fun toString(): String {
-        return name
+        return "$name"
     }
 }
