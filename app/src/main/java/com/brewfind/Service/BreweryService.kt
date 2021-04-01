@@ -31,4 +31,28 @@ class BreweryService {
 
         return breweries
     }
+
+    fun fetchBreweriesByArea(chosenStreet: String) : MutableLiveData<ArrayList<Brewery>> {
+        val breweries = MutableLiveData<ArrayList<Brewery>>()
+        val service = RetrofitClientInstance.retrofitInstance?.create(BreweryDAO::class.java)
+        val call = service?.getAllBreweries()
+        //TODO Pass chosenStreet to API call
+        call?.enqueue(object: Callback<ArrayList<Brewery>> {
+
+            override fun onResponse(
+                call: Call<ArrayList<Brewery>>,
+                response: Response<ArrayList<Brewery>>
+            ) {
+                breweries.value = response.body()
+            }
+
+            override fun onFailure(call: Call<ArrayList<Brewery>>, t: Throwable) {
+
+            }
+
+        })
+
+        return breweries
+    }
+
 }
