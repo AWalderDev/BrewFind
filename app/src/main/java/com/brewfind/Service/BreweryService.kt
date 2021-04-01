@@ -9,7 +9,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class BreweryService {
-    fun fetchBreweries() : MutableLiveData<ArrayList<Brewery>> {
+    internal fun fetchBreweries() : MutableLiveData<ArrayList<Brewery>> {
         var breweries = MutableLiveData<ArrayList<Brewery>>()
         val service = RetrofitClientInstance.retrofitInstance?.create(BreweryDAO::class.java)
         val call = service?.getAllBreweries()
