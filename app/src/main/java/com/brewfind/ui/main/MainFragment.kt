@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import androidx.lifecycle.Observer
 import com.brewfind.R
-import kotlinx.android.synthetic.main.main_fragment.*
+import kotlinx.android.synthetic.main.main_fragment.actBrewName
 
 class MainFragment : Fragment() {
 
@@ -26,7 +26,7 @@ class MainFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
         viewModel.breweries.observe(this, Observer {
-            breweries -> (ArrayAdapter(context!!, R.layout.support_simple_spinner_dropdown_item, breweries))
+            breweries -> actBrewName.setAdapter(ArrayAdapter(context!!, R.layout.support_simple_spinner_dropdown_item, breweries))
         })
         viewModel.fetchBreweries()
     }
