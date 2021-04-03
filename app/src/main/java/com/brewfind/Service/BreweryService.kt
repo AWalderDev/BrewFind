@@ -10,7 +10,7 @@ import retrofit2.Response
 
 class BreweryService {
     internal fun fetchBreweries() : MutableLiveData<ArrayList<Brewery>> {
-        var breweries = MutableLiveData<ArrayList<Brewery>>()
+        var _breweries = MutableLiveData<ArrayList<Brewery>>()
         val service = RetrofitClientInstance.retrofitInstance?.create(BreweryDAO::class.java)
         val call = service?.getAllBreweries()
 
@@ -20,7 +20,7 @@ class BreweryService {
                 call: Call<ArrayList<Brewery>>,
                 response: Response<ArrayList<Brewery>>
             ) {
-                breweries.value = response.body()
+                _breweries.value = response.body()
             }
 
             override fun onFailure(call: Call<ArrayList<Brewery>>, t: Throwable) {
@@ -29,11 +29,11 @@ class BreweryService {
 
         })
 
-        return breweries
+        return _breweries
     }
 
     fun fetchBreweriesByArea(chosenStreet: String) : MutableLiveData<ArrayList<Brewery>> {
-        val breweries = MutableLiveData<ArrayList<Brewery>>()
+        var _breweries = MutableLiveData<ArrayList<Brewery>>()
         val service = RetrofitClientInstance.retrofitInstance?.create(BreweryDAO::class.java)
         val call = service?.getAllBreweries()
         //TODO Pass chosenStreet to API call
@@ -43,7 +43,7 @@ class BreweryService {
                 call: Call<ArrayList<Brewery>>,
                 response: Response<ArrayList<Brewery>>
             ) {
-                breweries.value = response.body()
+                _breweries.value = response.body()
             }
 
             override fun onFailure(call: Call<ArrayList<Brewery>>, t: Throwable) {
@@ -52,7 +52,7 @@ class BreweryService {
 
         })
 
-        return breweries
+        return _breweries
     }
 
 }
