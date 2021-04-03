@@ -7,4 +7,8 @@
     <string name="menuPage">Menu Page</string>
     <string name="managePage">Manage Page</string>
     <string name="breweriesnearyou">Breweries Near You</string>
+    <string name="user_settings">User Settings</string>
+    <string name="location_settings">Location Settings</string>
+    <string name="notification">Notification</string>
+
 </resources>
