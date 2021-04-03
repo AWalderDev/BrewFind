@@ -8,7 +8,7 @@
         md = medium: 24dp
         lg = large: 40dp
         xlg = extra large: 50dp
-        xxlg = extra extra large: 280dp
+        xxlg = extra extra large: 500dp
        -->
     <dimen name="z">0dp</dimen>
     <dimen name="xsm">8dp</dimen>
