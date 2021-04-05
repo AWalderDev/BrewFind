@@ -10,5 +10,9 @@
     <string name="user_settings">User Settings</string>
     <string name="location_settings">Location Settings</string>
     <string name="notification">Notification</string>
+    <string name="positionNumber">Position Number</string>
+    <string name="address">Address</string>
+    <string name="webite">Website</string>
+    <string name="state">State</string>
 
 </resources>
