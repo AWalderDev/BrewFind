@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    Legend: Phone
+        z = zero: 0dp
+        xsm = extra small: 8dp
+        sm = small: 16dp
+        md = medium: 24dp
+        lg = large: 40dp
+        xlg = extra large: 50dp
+        xxlg = extra extra large: 190dp
+       -->
+    <dimen name="z">0dp</dimen>
+    <dimen name="xsm">8dp</dimen>
+    <dimen name="sm">16dp</dimen>
+    <dimen name="md">24dp</dimen>
+    <dimen name="lg">40dp</dimen>
+    <dimen name="xlg">50dp</dimen>
+    <dimen name="xxlg">190dp</dimen>
+</resources>
