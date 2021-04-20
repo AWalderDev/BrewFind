@@ -144,7 +144,7 @@ class BreweryService {
         val breweries = MutableLiveData<ArrayList<Brewery>>()
         val service = RetrofitClientInstance.retrofitInstance?.create(BreweryDAO::class.java)
         val call = service?.getBreweriesByName(name,page);
-        
+
         call?.enqueue(object : Callback<ArrayList<Brewery>> {
 
             override fun onResponse(
