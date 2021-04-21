@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object RetrofitClientInstance {
     //declare variables for retrofit instance and base url for json endpoint
     private var retrofit: Retrofit? = null
-    private const val base_url = "https://api.openbrewerydb.org"
+    private const val base_url = "https://api.openbrewerydb.org/"
 
     //build retrofit client instance
     val retrofitInstance : Retrofit?
